@@ -14,8 +14,3 @@ app.use('/api', router);
 
 app.listen(port, () => console.log("listenin on 2000"));
 
-// JUST UNTIL AWS IS RUNNING
-app.use('/Users', ((req, res) => {
-  console.log(req.url);
-  res.redirect("http://localhost:2001" + "/Users" + req.url);
-})); 
